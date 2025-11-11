@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiago | Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo"><a href="#hero">Thiago<span>.</span>dev</a></h1>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="overlay" id="overlay"></div>
+
+  <section id="hero" class="fade-in">
+    <img src="fotos/perfil.jpg" alt="Foto de Thiago" class="profile-pic" style="display: block; margin: 0 auto;">
+    <div class="hero-text">
+      <h2>Hello World, eu sou o <span>Thiago</span> 👋</h2>
+      <p>Desenvolvedor em formação, apaixonado por tecnologia e inovação. Busco criar soluções que realmente façam diferença.</p>
+      <a href="#projetos" class="btn">Ver Projetos</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="fade-in">
+    <h2>Sobre mim</h2>
+    <p>Sou estudante de Análise e Desenvolvimento de Sistemas. Sem experiência no mundo da programação. Meu foco é crescer na área de desenvolvimento e contribuir com ideias criativas e práticas.</p>
+  </section>
+
+  <section id="skills" class="fade-in">
+    <h2>Habilidades</h2>
+    <div class="skills-container">
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        <br>
+        <span>HTML</span>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+        <br>
+        <span>CSS</span>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+        <br>
+        <span>GIT</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos" class="fade-in">
+    <h2>Projetos</h2>
+    <div class="projetos-container">
+      <div class="projeto">
+        <h3>Amor em Pixels</h3>
+        <a href="https://thiagosantoso.github.io/pixels/" target="_blank">
+          <img src="fotos/pixel-heart.png" alt="Pixels" class="heart-pixel">
+        </a>
+        <p>Demonstrando carinho com HTML, CSS e JavaScript.</p>
+      </div>
+      <div class="projeto projeto-aniversario">
+        <h3>Cartão de Aniversário</h3>
+        <a href="https://thiagosantoso.github.io/card-aniversario-namorada/" target="_blank">
+          <img src="fotos/calendario.png" alt="Calendario" class="heart-pixel" id="calendario-icon">
+        </a>
+        <p>Cartão de aniversário para uma pessoa especial.</p>
+        <canvas id="confetti-canvas"></canvas>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="contato" class="fade-in">
+    <h2>Contato</h2>
+    <p>Quer trocar uma ideia? Me chama nas redes 👇</p>
+    <div class="contatos">
+      <a href="https://instagram.com/thiago_santos2002" target="_blank" title="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+      <a href="https://wa.me/5575998443785" target="_blank" title="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.8" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+          <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+        </svg>
+      </a>
+      <a href="mailto:ts0141632@outlook.com" title="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Thiago.dev — Feito com ☕ e dedicação.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
